@@ -24,7 +24,7 @@ RUN apt-get update -y && \
     apt-get purge -y make
 
 # Externally accessible data is by default put in /data.
-WORKDIR /data
+#WORKDIR /data
 #VOLUME ["/data"] - don't need this for Discovery Env use
 
 # Ensure the SHELL is picked up by grass.
